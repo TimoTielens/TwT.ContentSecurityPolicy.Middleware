@@ -8,7 +8,8 @@ The project is build in .NET CORE 3.1. It also contains two example projects. Th
 ## Usage
 You can use this middleware by calling 'UseContentSecurityPolicyHeaderMiddelware' on the Startup file of your ASP.NET project
 
-`app.UseContentSecurityPolicyHeaderMiddelware(builder =>
+`
+            app.UseContentSecurityPolicyHeaderMiddelware(builder =>
             {
                 #region CSP Level 1
                 //Level1 is always enabled!
