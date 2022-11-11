@@ -53,6 +53,8 @@ namespace TwT.ContentSecurityPolicy.Middleware
                 value += GetDirective("connect-src", _options.Connect);
                 value += GetDirective("font-src", _options.Fonts);
                 value += GetDirective("object-src", _options.Object);
+                value += GetDirective("media-src", _options.Media);
+                value += GetDirective("Frame-src", _options.Frame);
             }
 
             //CSP Level 3 is an extension on Level 1 and 2. So if Level 3 is enabled all the other are as well
